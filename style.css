@@ -1,0 +1,75 @@
+@font-face {
+  font-family: minecraft;
+  src: url(./assets/Minecraft\ Evenings.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body {
+  background-size: cover;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-image: url(Pictures/minecraft\ bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.headerCont {
+  width: 100vw;
+  height: 18vh;
+  background-color: rgba(240, 248, 255, 0.521);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 7px 7px;
+}
+.mainCont {
+  position: relative;
+  flex: 1;
+}
+.timeCont {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-right: 18px;
+}
+.logo {
+  font-family: minecraft;
+  color: rgb(50, 54, 54);
+  font-size: 7em;
+}
+/* footer styles */
+.footerCont {
+  text-align: center;
+  font-family: monospace;
+  height: 3vh;
+}
+@media screen and (max-width: 320px) {
+  body {
+    background-image: url(/Pictures/minecraft\ bg\ resized.jpg);
+    background-size: 320px 636px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(/Pictures/minecraft\ bg\ resized\ 2.jpg);
+  }
+  .logo {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 657px) {
+  .logo {
+    font-size: 4rem;
+  }
+}
