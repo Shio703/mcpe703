@@ -1,11 +1,10 @@
-const timeCont = document.querySelector(".timeCont");
+const hourCont = document.querySelector(".hourCont");
+const minuteCont = document.querySelector(".minuteCont");
 
 setInterval(() => {
   const hours = new Date().getHours();
   const minutes = new Date().getMinutes();
-  timeCont.innerHTML =
-    `${hours.toString().padStart(2, "0")}` +
-    ":" +
-    `${minutes.toString().padStart(2, "0")}`;
+  hourCont.innerHTML = `${hours.toString().padStart(2, "0")}`;
+  minuteCont.innerHTML = `${minutes.toString().padStart(2, "0")}`;
   console.log("tick");
 }, 1000);

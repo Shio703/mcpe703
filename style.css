@@ -41,6 +41,8 @@ body {
   font-size: 1.3rem;
   font-weight: bolder;
   margin-right: 18px;
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: minecraft;
@@ -55,14 +57,14 @@ body {
 }
 @media screen and (max-width: 320px) {
   body {
-    background-image: url(/Pictures/minecraft\ bg\ resized.jpg);
+    background-image: url(./assets/Pictures/minecraft\ bg\ resized.jpg);
     background-size: 320px 636px;
   }
 }
 
 @media screen and (max-width: 375px) {
   body {
-    background-image: url(/Pictures/minecraft\ bg\ resized\ 2.jpg);
+    background-image: url(./assets/Pictures/minecraft\ bg\ resized\ 2.jpg);
   }
   .logo {
     font-size: 3rem;
@@ -71,5 +73,16 @@ body {
 @media screen and (max-width: 657px) {
   .logo {
     font-size: 4rem;
+  }
+}
+/* animations */
+#clockDivider {
+  transform: translateY(-1.6px);
+  /* i already tried df and then align-items: center; but result was not what i wanted  */
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
